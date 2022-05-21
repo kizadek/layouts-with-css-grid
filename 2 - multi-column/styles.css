@@ -2,16 +2,60 @@
 
 body {
   margin: 20px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   background: #d1dedd;
 }
-ul, li {
+ul,
+li {
   padding: 0;
   list-style-type: none;
 }
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   color: #767f7e;
 }
 p {
   color: #828b8a;
+}
+
+.header {
+  max-width: 1200px;
+  margin: 40px auto;
+  border-bottom: 1px solid #bbc7c7;
+}
+
+.grid-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured img,
+article img {
+  max-width: 100%;
+  border: 3px solid #f1f5f4;
+  border-radius: 5px;
+}
+
+.featured {
+  grid-column: 1/4;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer {
+  border-top: 1px solid #bbc7c7;
+  text-align: center;
+  margin: 20 auto;
 }
