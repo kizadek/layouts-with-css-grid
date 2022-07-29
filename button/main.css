@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-size:62.5% ;
+    box-sizing: inherit;
+}
+
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background-color: #f7f7f7;
+    font-size: 1.7rem;
+
+}
+
+
+.btn{
+    padding: 2rem 5rem;
+    background-color: aqua;
+    position: relative;
+}
+
+
+.btn::after,
+.btn::before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: grid;
+   place-items: center;
+   transform-origin: top;
+   transform: rotateX(270deg);
+   transition: all .3s ease;
+   
+} 
+
+
+.btn::after{
+  content: 'Dick';
+  background-color:blueviolet;
+  transition-delay: .3s;
+}
+
+.btn::before{
+   content: 'My';
+   background-color: bisque;
+}
+
+.btn:hover::before,
+.btn:hover::after{
+    transform: rotateX(0);
+}
