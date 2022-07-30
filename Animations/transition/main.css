@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+
+.container{
+    height: 100vh;
+    background-color: antiquewhite;
+    display: grid;
+    place-items: center;
+    font-size: 1.6rem;
+}
+
+
+.btn{
+    padding: 2rem 4rem;
+    background-color: black;
+    color: azure;
+    transition-property: padding background-color font-size ;
+    transition-duration: .8s;
+    /* transition-timing-function: steps(6, end); */
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+    transition-delay: .5s;
+
+}
+
+
+.btn:hover{
+    background-color: cadetblue;
+    padding: 3rem 6rem;
+    border-radius: 3rem;
+}
+
+.btn--move{
+    transition-property: translet();
+    transition-duration: 3s;
+}
+
+.btn--move:hover{
+    transform: translate(10rem, 10rem);
+    background-color: rgb(172, 170, 206);
+}
+
+
+
+.pdft{
+    background-color: blue;
+    padding: 2rem 6rem;
+    text-align: center;
+    transition: padding .8s ease-in .8s ,border-radius 1s ease .8s;
+}
+
+.pdft:hover{
+    background-color: brown;
+     padding: 2rem;
+     border-radius: 2rem;
+}

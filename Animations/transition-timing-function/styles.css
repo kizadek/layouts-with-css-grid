@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    box-sizing: inherit;
+}
+
+.container{
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.move{
+    background-color: rgb(255, 238, 0);
+    padding: 2rem 5rem;
+    width: 17.2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition-property: transform;
+    transition-duration: 3s;
+}
+
+#ease{
+transition-timing-function: ease;
+}
+#linear{
+transition-timing-function: linear;
+}
+#ease-in{
+transition-timing-function: ease-in;
+}
+#ease-out{
+transition-timing-function: ease-out;
+}
+#ease-in-out{
+transition-timing-function: ease-in-out;
+   
+}
+
+.move:hover{
+    transform: translate(1200px , 0);
+    /* transform: rotate(90deg); */
+}
