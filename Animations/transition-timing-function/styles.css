@@ -50,6 +50,6 @@ transition-timing-function: ease-in-out;
 }
 
 .move:hover{
-    transform: translate(1200px , 0);
+    transform: translate(1200px); /* we use translate function to move elements    tranlate(x , y)*/
     /* transform: rotate(90deg); */
 }
