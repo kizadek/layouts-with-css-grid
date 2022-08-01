@@ -29,7 +29,7 @@ p {
   max-width: 1200px;
   margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-column: repeat(3, 1fr);
   gap: 60px;
   justify-content: center;
   align-items: center;

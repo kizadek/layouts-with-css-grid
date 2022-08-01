@@ -42,7 +42,6 @@ body{
    transform-origin: top;
    transform: rotateX(270deg);
    transition: all .3s ease;
-   
 } 
 
 
